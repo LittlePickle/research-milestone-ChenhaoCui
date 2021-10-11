@@ -1,0 +1,28 @@
+<!doctype html>
+{% load static %}
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lab system-{% block title %}{% endblock %}</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/book.css' %}">
+</head>
+
+<body>
+<!-- header -->
+<div id="header">
+    <img src="{% static 'images/book_img2.jpg' %}" width="20px" height="20px">
+    {% block header %}{% endblock %}
+    <hr/>
+</div>
+<!-- body -->
+<div id="content">
+    {% block body %}
+    {% endblock %}
+</div>
+<!-- footer -->
+<div id="footer">
+  <hr/>
+</div>
+
+</body>
+</html>
