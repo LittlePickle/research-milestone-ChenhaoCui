@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}register{% endblock %}
+{% block header %}register{% endblock %}
+{% block body %}
+    <table width="40%" border="0">
+      <tbody>
+        <tr>
+          <td class="label">id：</td>
+          <td><input type="text"/></td>
+        </tr>
+        <tr>
+          <td class="label">password：</td>
+          <td><input type="password"/></td>
+        </tr>
+        <tr>
+          <td class="label">word again：</td>
+          <td><input type="password"/></td>
+        </tr>
+        <tr>
+          <td class="label">email：</td>
+          <td><input type="text"/></td>
+        </tr>
+        <tr align="center">
+          <td colspan="2">
+            <input type="submit">
+            <input type="reset">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+{% endblock %}
